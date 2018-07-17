@@ -1,0 +1,23 @@
+<h1 style="margin-left:20px;"> User Registration </h1>
+{{#if errorMessage}}
+      <div>
+        {{errorMessage}}
+      </div>
+    {{/if}}
+<form action="/signup" method="post">
+    <div>
+        <label>Username:</label>
+        <input type="text" name="username"/>
+    </div>
+    <div>
+        <label>Password:</label>
+        <input type="password" name="password"/>
+    </div>
+    <div>
+        <label>Re-enter password:</label>
+        <input type="password" name="password1"/>
+    </div>
+    <div>
+        <input type="submit" value="SignUp"/>
+    </div>
+</form>
